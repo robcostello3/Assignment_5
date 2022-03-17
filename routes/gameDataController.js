@@ -45,7 +45,7 @@ module.exports.saveEntry = function(req,res){
       new GameTest(gameTestData).save().then(function(data){
         console.log("Data Saved")
       }).catch(function(err){
-        console.log(data)
+        console.log(err)
       })
     }
     
